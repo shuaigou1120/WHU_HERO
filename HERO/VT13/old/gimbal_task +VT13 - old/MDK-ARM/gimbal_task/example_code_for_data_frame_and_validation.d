@@ -1,0 +1,1 @@
+gimbal_task\example_code_for_data_frame_and_validation.o: ..\application\Example_Code_for_Data_Frame_and_Validation.c

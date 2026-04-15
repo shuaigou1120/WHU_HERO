@@ -1,0 +1,117 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 11 wwww, HP Inc., LIC=03C6R-KPAS0-BSQYX-HMX8R-YBSK6-AIEQG
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  C:\KEIL C51\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      CMSIS_AGDI.dll V1.28.3.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+C:\Users\zhangfan\Desktop\hero\HERO\VT13\chassis_task +VT13\MDK-ARM\chassis_task.uvprojx
+Project File Date:  03/02/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\KEIL C51\ARM\ARMCC\Bin'
+Build target 'chassis_task'
+compiling test_task.c...
+..\application\vofa.h(3): warning:  #1-D: last line of file ends without a newline
+  void vofa_task();
+..\application\vofa.h(3): warning:  #1295-D: Deprecated declaration vofa_task - give arg types
+  void vofa_task();
+..\application\CAN_receive.h(175): warning:  #1295-D: Deprecated declaration get_Chassisdata_point - give arg types
+  extern const chassis_data_t *get_Chassisdata_point();
+..\application\shoot.h(68): warning:  #1295-D: Deprecated declaration shoot - give arg types
+  extern shoot_control_t *shoot();
+..\application\shoot.h(69): warning:  #1295-D: Deprecated declaration shoot_init - give arg types
+  extern void shoot_init();
+..\application\shoot.h(71): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\application\gimbal_task.h(79): warning:  #1295-D: Deprecated declaration gimbal_task - give arg types
+  void gimbal_task();
+..\application\gimbal_task.h(80): warning:  #1295-D: Deprecated declaration vofa_task - give arg types
+  void vofa_task();
+..\application\gimbal_task.h(82): warning:  #1-D: last line of file ends without a newline
+  #endif
+../components/UI/ui_MODE.h(17): warning:  #1295-D: Deprecated declaration ui_init_MODE_mode - give arg types
+  void ui_init_MODE_mode();
+../components/UI/ui_MODE.h(18): warning:  #1295-D: Deprecated declaration ui_update_MODE_mode - give arg types
+  void ui_update_MODE_mode();
+../components/UI/ui_MODE.h(19): warning:  #1295-D: Deprecated declaration ui_remove_MODE_mode - give arg types
+  void ui_remove_MODE_mode();
+../components/UI/ui_MODE.h(27): warning:  #1295-D: Deprecated declaration ui_init_MODE_text - give arg types
+  void ui_init_MODE_text();
+../components/UI/ui_MODE.h(28): warning:  #1295-D: Deprecated declaration ui_update_MODE_text - give arg types
+  void ui_update_MODE_text();
+../components/UI/ui_MODE.h(29): warning:  #1295-D: Deprecated declaration ui_remove_MODE_text - give arg types
+  void ui_remove_MODE_text();
+../components/UI/ui.h(16): warning:  #1295-D: Deprecated declaration ui_init_MODE_mode - give arg types
+  void ui_init_MODE_mode();
+../components/UI/ui.h(17): warning:  #1295-D: Deprecated declaration ui_update_MODE_mode - give arg types
+  void ui_update_MODE_mode();
+../components/UI/ui.h(18): warning:  #1295-D: Deprecated declaration ui_remove_MODE_mode - give arg types
+  void ui_remove_MODE_mode();
+../components/UI/ui.h(19): warning:  #1295-D: Deprecated declaration ui_init_MODE_text - give arg types
+  void ui_init_MODE_text();
+../components/UI/ui.h(20): warning:  #1295-D: Deprecated declaration ui_update_MODE_text - give arg types
+  void ui_update_MODE_text();
+../components/UI/ui.h(21): warning:  #1295-D: Deprecated declaration ui_remove_MODE_text - give arg types
+  void ui_remove_MODE_text();
+../components/UI/ui_pos.h(19): warning:  #1295-D: Deprecated declaration ui_init_pos_static - give arg types
+  void ui_init_pos_static();
+../components/UI/ui_pos.h(20): warning:  #1295-D: Deprecated declaration ui_update_pos_static - give arg types
+  void ui_update_pos_static();
+../components/UI/ui_pos.h(21): warning:  #1295-D: Deprecated declaration ui_remove_pos_static - give arg types
+  void ui_remove_pos_static();
+../components/UI/ui.h(26): warning:  #1295-D: Deprecated declaration ui_init_pos_static - give arg types
+  void ui_init_pos_static();
+../components/UI/ui.h(27): warning:  #1295-D: Deprecated declaration ui_update_pos_static - give arg types
+  void ui_update_pos_static();
+../components/UI/ui.h(28): warning:  #1295-D: Deprecated declaration ui_remove_pos_static - give arg types
+  void ui_remove_pos_static();
+..\application\test_task.c(77): error:  #20: identifier "shoot_control" is undefined
+                if(shoot_control.shoot_control_data->selfaim_mode==1)
+..\application\test_task.c(129): warning:  #177-D: function "buzzer_warn_error"  was declared but never referenced
+  static void buzzer_warn_error(uint8_t num)
+..\application\test_task.c: 28 warnings, 1 error
+"chassis_task\chassis_task.axf" - 1 Error(s), 28 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.0.1.pack
+                ARM.CMSIS.5.0.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.0.1
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil.STM32F4xx_DFP.2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_chassis_task
+  C:\KEIL C51\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include
+  C:\KEIL C51\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.0.1
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
